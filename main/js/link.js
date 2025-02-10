@@ -23,5 +23,5 @@ document.addEventListener("DOMContentLoaded", function () {
             document.head.appendChild(link);
 
       })
-      .catch(error => console.error("헤더 로딩 실패:", error));
+      .catch(error => console.error("footer 로딩 실패:", error));
   });  
