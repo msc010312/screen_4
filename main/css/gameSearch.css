@@ -1,4 +1,4 @@
-.search-bar {
+.searchBar {
   border-bottom: 3px solid #CB863D;
   display: flex;
   width: 100%;
@@ -8,17 +8,17 @@
   align-items: center;
 }
 
-.search-bar>.select{
-  flex-direction: column;
+.searchBar>.select {
   margin-right: 30px;
-  
+
 }
 
-.search-bar>.select>span{
+.searchBar>.select>span {
   display: block;
   width: 200px;
   height: 35px;
   border-bottom: 3px solid #CB863D;
+  color: white;
 }
 
 
@@ -26,12 +26,14 @@ select {
   margin-top: 5px;
   width: 200px;
   height: 50px;
+  background-color: #D0CAC3;
 }
 
-.search-bar>.search{
+.searchBar>.search {
   margin-top: 20px;
 }
-.search-bar>.search>.search-box {
+
+.searchBar>.search>.searchBox {
   background-color: #d9d9d9;
   width: 220px;
   height: 60px;
@@ -39,13 +41,14 @@ select {
   border-radius: 15px;
   justify-content: center;
   align-items: center;
-  
+
 }
 
-.search-bar>.search>.search-box>img{
+.searchBar>.search>.searchBox>img {
   margin-left: 15px
 }
-.search-bar>.search>.search-box>input {
+
+.searchBar>.search>.searchBox>input {
   width: 150px;
   height: 40px;
   background-color: #d9d9d9;
@@ -54,8 +57,9 @@ select {
   border: none;
 }
 
-.board{
+.board {
   width: 300px;
   background-color: #262322;
+  color: white;
   height: 100vh;
 }
