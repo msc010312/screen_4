@@ -49,6 +49,8 @@
     border-bottom: 1px solid #CB863D;
 }
 
+
+
 .boardList {
     position: relative;
 }
@@ -75,14 +77,24 @@
 }
 
 .subStxt {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     min-height: 50px;
     line-height: 50px;
     border-bottom: 1px solid #CB863D;
     background: #262322;
+    transition: ease-out 0.3s;
 }
 
-.subStxt>span {
+.subStxt:hover {
+    background: #1c1614;
+}
+
+.subStxt span {
     padding: 0 35px;
+    color: #fff;
 }
 
 .subSimg {
