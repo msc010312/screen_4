@@ -16,6 +16,15 @@
     position: relative;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
+}
+
+.fList>ul>li>a {
+    color: #fff;
+}
+
+.fList>ul>li>a:hover {
+    transition: ease-out 0.3s;
+    color: #CB863D;
 }
 
