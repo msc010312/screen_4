@@ -47,6 +47,7 @@
     min-height: 50px;
     text-align: center;
     border-bottom: 1px solid #CB863D;
+    background: #1b1918;
 }
 
 
@@ -89,7 +90,7 @@
 }
 
 .subStxt:hover {
-    background: #1c1614;
+    background: #1b1918;
 }
 
 .subStxt span {
@@ -112,4 +113,29 @@
     background: #CB863D;
 }
 
+/* 1260px 반응형 */
+@media (max-width : 1260px) {
 
+    .pagew {
+        width: 100%;
+        margin: 0;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .board {
+        max-width: none;
+        width: 100%;
+        border-bottom: 2px solid #CB863D;
+    }
+
+    .boardSec {
+        margin-bottom: 0;
+    }
+
+    .boardList {
+        padding: 15px 0 ;
+    }
+}
