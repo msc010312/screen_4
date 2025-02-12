@@ -147,7 +147,6 @@ select {
 .gameSpec>.gamePrice {
   display: flex;
   justify-content: center;
-  /* line-height: 60px; */
 }
 
 .gameSpec>.gamePrice>li>a {
