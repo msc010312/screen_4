@@ -1,13 +1,13 @@
 @charset 'utf-8';
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline-style: none;
-}
+} */
 
-ul,
+/* ul,
 ol {
     list-style: none;
 }
@@ -20,14 +20,14 @@ a {
 img {
     border: 0;
     vertical-align: middle;
-}
+} */
 
-html {
-    /*font-size: 10px;*/
-    user-select: none;
-}
+/* html {
+    font-size: 10px;
+    user-select: none; 
+} */
 
-body {
-    /* font-family: 'IBM Plex Serif', serif; */
-    overflow-x: hidden;
-}
+/* body {
+    font-family: 'IBM Plex Serif', serif; 
+    overflow-x: hidden; 
+} */

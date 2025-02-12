@@ -362,7 +362,7 @@
 }
 
 /* 임시영역(지워도 무방) */
-body {
+/* body {
     width: 100vw;
     background: #181818;
 }
@@ -386,4 +386,4 @@ body {
     position: relative;
     background-color: #262322;
     height: 200px;
-}
+} */

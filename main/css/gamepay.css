@@ -36,9 +36,14 @@ body{background-color: #181818; color: white;}
     
 }
 
-.wrapper>.video{ }
+.wrapper>.video{ 
+    width: 750px;
+    height: 420px;
+}
 .wrapper>.price{
     width: 450px;
+    height: 250px;
+    background-color: aquamarine;
 }
 .wrapper>.price>.list{
     
@@ -87,18 +92,23 @@ body{background-color: #181818; color: white;}
     border-top: 3px solid orange;
     display: flex;
     align-items: end;
-    justify-content: space-evenly;
+    justify-content: end;
+    
 }
 .wrapper>.price>.pay-btn>li{
     background-color: orange;
     border-radius: 10px;
     width: 107px;
     height: 40px;
+    text-align: center;
+}
+.wrapper>.price>.pay-btn>li>a{
+    color: white;
 }
 .wrapper>.user{
     width: 450px;
-    border-top: 3px solid orange;
-   
+    height: 167px;
+    background-color: #31D236;
 }
 .wrapper>.user>.user.emoji{
     position: relative;
@@ -108,13 +118,8 @@ body{background-color: #181818; color: white;}
 }
 .wrapper>.bottom-left{
     width: 750px;
-    text-align: center;
-    padding: 50px 5px 10px 5px;
-    justify-content: space-between;
+    height: 491px;
     border-top: 3px solid orange;
-    position: relative;
-    line-height: 20px;
-    
 }
 .wrapper>.bottom-left>ul>li>p:nth-child(1){
     font-size: 30px;
@@ -149,6 +154,7 @@ body{background-color: #181818; color: white;}
 }
 .wrapper>.bottom-right{
     width: 450px;
+    height: 319px;
     border-top: 3px solid orange;
     
 }
@@ -168,13 +174,15 @@ body{background-color: #181818; color: white;}
 .wrapper>.bottom-right>.slider>.img{
     display: flex;
     border-top: 3px solid orange;
-    padding-top: 5%;
+    /* padding-top: 5%; */
 }
 .wrapper>.bottom-right-under{
     width: 450px;
+    height: 172px;
     padding-top: 5px;
     font-size: 24px;
     border-top: 3px solid orange;
+    
     
 }
 .wrapper>.bottom-right-under>section>.image{
