@@ -1,4 +1,5 @@
 li{list-style: none;}
+a { text-decoration: none; }
 
 body{background-color: #181818; color: white;}
     
@@ -22,8 +23,6 @@ body{background-color: #181818; color: white;}
 .bottom-left{grid-area: bottom-left;}
 .bottom-right{grid-area: bottom-right;}
 .bottom-right-under{grid-area: bottom-right-under;}
-
-
 
 #headerContainer{
     height: 160px;
@@ -78,13 +77,16 @@ body{background-color: #181818; color: white;}
     color: white;
 }
 .wrapper>.price>.btn>li:nth-child(1){
-    background-color: #4F4F4F;
+    background-color: #4a4a4a;
+    :hover{color: #1d1c1c;}
 }
 .wrapper>.price>.btn>li:nth-child(2){
     background-color: #294396;
+    :hover{color: #0c1e5a;}
 }
 .wrapper>.price>.btn>li:nth-child(3){
     background-color: #31D236;
+    :hover{color: #0f4d11}
 }
 
 /* wr-pr-pay_btn */
@@ -102,6 +104,7 @@ body{background-color: #181818; color: white;}
 }
 .wrapper>.price>.pay-btn>li{
     background-color: orange;
+    
     border-radius: 10px;
     width: 107px;
     height: 40px;
@@ -111,8 +114,8 @@ body{background-color: #181818; color: white;}
     justify-content: center;
     margin-right: 14px;
     margin-top: 20px;
-    
 
+    :hover{color: rgb(158, 105, 6);}
 }
 .wrapper>.price>.pay-btn>li>a{
     color: white;
@@ -128,15 +131,21 @@ body{background-color: #181818; color: white;}
     position: relative;
 
 }
-.wrapper>.user>.user-emoji>ul>li>svg:nth-child(1){
-    padding-bottom: 7%;
-}
-.wrapper>.user>.user-emoji:nth-child(2){}
+
 .wrapper>.user>.user-emoji>ul{}
 .wrapper>.user>.user-emoji>ul>li>span{
     font-size: 40px;
     position: absolute;
     right: 55%;
+    
+}
+.wrapper>.user>.user-emoji>ul>li>a>svg:nth-child(1){
+    padding-bottom: 7%;
+}
+.wrapper>.user>.user-emoji>ul>li>a:nth-child(1){
+    color: green;
+}
+.wrapper>.user>.user-emoji>ul>li>a:nth-child(2){
     
 }
 .wrapper>.user>.chart>.pie{
@@ -193,7 +202,7 @@ body{background-color: #181818; color: white;}
 
 .wrapper>.bottom-right{
     width: 450px;
-    height: 319px;
+    height: 300px;
     border-top: 3px solid orange;
     
     
@@ -201,16 +210,24 @@ body{background-color: #181818; color: white;}
 .wrapper>.bottom-right>.right{
    display: flex;
    justify-content: space-between;
-   padding: 5px 3px 0;
+   padding: 7px 5px 7px 0;
    font-size: 24px;
    align-items: center;
    font-weight: bold;
    
+   border-bottom:3px solid orange;
+   
 }
-.wrapper>.bottom-right>.right>.left>ul{
+.wrapper>.bottom-right>.right>.left{
+
+}
+.wrapper>.bottom-right>.right>.left>.left-btn{
     display: flex;
-    align-items: center;
+    position: absolute;
     justify-content: center;
+    align-items: center;
+   
+    
 }
 .wrapper>.bottom-right>.slider{
     position: relative;
@@ -220,11 +237,11 @@ body{background-color: #181818; color: white;}
     height: 239px;
     
 }
+
 .wrapper>.bottom-right>.slider>.img{
     display: flex;
-    border-top: 3px solid orange;
     position: absolute;
-    top: 0;
+    top: 40px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -235,15 +252,19 @@ body{background-color: #181818; color: white;}
 
 }
 .wrapper>.bottom-right>.slider>.img:nth-child(1){
+    background-image: url(image/dlc1.jpg);
     animation-delay: 0;
 }
 .wrapper>.bottom-right>.slider>.img:nth-child(2){
+    background-image: url(image/dlc2.jpg);
     animation-delay: -2.5s;
 }
 .wrapper>.bottom-right>.slider>.img:nth-child(3){
+    background-image: url(image/dlc3.jpg);
     animation-delay: -5s;
 }
 .wrapper>.bottom-right>.slider>.img:nth-child(4){
+    background-image: url(image/dlc4.jpg);
     animation-delay: -7.5s;
 }
 
@@ -253,7 +274,7 @@ body{background-color: #181818; color: white;}
     height: 172px;
     /* padding-top: 5px; */
 
-    font-size: 24px;
+    font-size: 25px;
     font-weight: bold;
 
     border-top: 3px solid orange;
@@ -261,10 +282,14 @@ body{background-color: #181818; color: white;}
     position: relative;
     align-items: center;
 }
+.wrapper>.bottom-right-under>div{
+    margin-top: 10px;
+    padding-left: 2%;
+}
 .wrapper>.bottom-right-under>section>.image{
     display: flex;
     justify-content: space-between;
-    padding: 30px 8px 0 8px;
+    padding: 10px 8px 0 8px;
 }
 
 @keyframes slider {
