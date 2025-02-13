@@ -6,7 +6,8 @@ body{background-color: #181818; color: white;}
 .wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(1fr);
+    
 
     grid-template-areas: 
     "video price"
@@ -21,6 +22,7 @@ body{background-color: #181818; color: white;}
 .bottom-left{grid-area: bottom-left;}
 .bottom-right{grid-area: bottom-right;}
 .bottom-right-under{grid-area: bottom-right-under;}
+
 
 
 #headerContainer{
@@ -38,24 +40,24 @@ body{background-color: #181818; color: white;}
 .wrapper>.video{ 
     width: 750px;
     height: 420px;
+
 }
 /* wr-price */
 .wrapper>.price{
     width: 450px;
-    height: 250px;
+    height: 220px;
+    border-bottom: 3px solid orange;
 }
 /* wr-pr-list */
 .wrapper>.price>.list{
-    padding-top: 2%;
+    position: absolute;
+    height: 125px;
 }
 .wrapper>.price>.list>span{ 
     font-size: 20px;
-    padding-left: 10%;
 }
 .wrapper>.price>.list>ul>li{ 
     font-size: 20px;
-    padding-left: 20px;
-    padding-top: 3%;  
 }
 /* wr-pr-btn */
 .wrapper>.price>.btn{
@@ -87,22 +89,30 @@ body{background-color: #181818; color: white;}
 
 /* wr-pr-pay_btn */
 .wrapper>.price>.pay-btn{
-    border-top: 3px solid orange;
-    text-align: center;
     display: flex;
+    width: 450px;
+    justify-content: end;
 
+    
     position: absolute;
     right: 1px;
-    top: 12%;
+    top: 15%;
+
+  border-top: 3px solid orange;  
 }
 .wrapper>.price>.pay-btn>li{
     background-color: orange;
     border-radius: 10px;
     width: 107px;
     height: 40px;
+    display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin-right: 14px;
+    margin-top: 20px;
+    
+
 }
 .wrapper>.price>.pay-btn>li>a{
     color: white;
@@ -112,37 +122,73 @@ body{background-color: #181818; color: white;}
 .wrapper>.user{
     width: 450px;
     height: 167px;
+    
 }
 .wrapper>.user>.user-emoji{
     position: relative;
 
 }
+.wrapper>.user>.user-emoji>ul>li>svg:nth-child(1){
+    padding-bottom: 7%;
+}
+.wrapper>.user>.user-emoji:nth-child(2){}
+.wrapper>.user>.user-emoji>ul{}
 .wrapper>.user>.user-emoji>ul>li>span{
     font-size: 40px;
-    text-align: center;
+    position: absolute;
+    right: 55%;
     
 }
 .wrapper>.user>.chart>.pie{
     display:inline-block;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     background: conic-gradient( #AA2828 50% 50%,#72DA58 50% 50%);
     border-radius: 50%;  
    
     position: absolute;
     right: 2%;
-    top: 27%;
+    top: 28%;
 }
 .wrapper>.bottom-left{
     width: 750px;
     height: 491px;
     border-top: 3px solid orange;
 }
-.wrapper>.bottom-left>ul>li>p{
-    text-align: center;
-    text-align: justify;
-    font-size: 50px;
+.wrapper>.bottom-left>div>ul{
+    margin: 0;
+    padding : 0 15px 0 15px;
+
 }
+.wrapper>.bottom-left>div>ul>li>p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    word-break: keep-all;
+    line-height:32px;
+}
+
+.wrapper>.bottom-left>div>ul>li>p:nth-child(1){
+    font-size: 20px;
+    font-weight: bolder;
+}
+.wrapper>.bottom-left>div>ul>li>p:nth-child(2){
+    font-size: 13px;
+}
+.wrapper>.bottom-left>div>ul>li>p:nth-child(3){
+    font-size: 13px;
+}
+.wrapper>.bottom-left>div>ul>li>span{
+    
+    text-align: center;
+    justify-content: center;
+    font-size: 13px;
+    line-height: 10px;
+    color: #A8B5C0;
+    
+}
+
 
 .wrapper>.bottom-right{
     width: 450px;
