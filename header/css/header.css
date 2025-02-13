@@ -20,7 +20,7 @@
     height: 100%;
 }
 
-.logo>img {
+.logo>a>img {
     height: 150px;
 }
 
