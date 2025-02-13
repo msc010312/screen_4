@@ -180,13 +180,14 @@ body{background-color: #181818; color: white;}
     font-size: 13px;
 }
 .wrapper>.bottom-left>div>ul>li>span{
-    
     text-align: center;
     justify-content: center;
     font-size: 13px;
     line-height: 10px;
-    color: #A8B5C0;
-    
+    color: #A8B5C0;    
+}
+.wrapper>.bottom-left>div>ul>li:last-child{
+    margin-top: 70px;
 }
 
 
