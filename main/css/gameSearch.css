@@ -30,7 +30,9 @@ select {
 }
 
 .searchBar>.search {
-  margin-top: 20px;
+  height: 90px;
+  display: flex;
+  align-items: end;
 }
 
 .searchBar>.search>.searchBox {
@@ -48,7 +50,7 @@ select {
   margin-left: 15px
 }
 
-.searchBar>.search>.searchBox>input {
+.searchBar>.search>.searchBox>form>input {
   width: 150px;
   height: 40px;
   background-color: #d9d9d9;
@@ -64,8 +66,8 @@ select {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  /* gap: 20px; */
+  justify-content: center;
+  gap: 20px;
 }
 
 .gameBox>.game {
@@ -77,13 +79,13 @@ select {
 .gameBox>.game>.gameImg {
   width: 250px;
   height: 200px;
+  transition: .5s;
 }
 
 .gameBox>.game>.gameImg>a>img {
   width: 250px;
   height: 200px;
   object-fit: cover;
-  transition: .5s;
 }
 
 .gameBox>.game:hover .gameImg {
@@ -149,9 +151,9 @@ select {
   justify-content: center;
 }
 
-.gameSpec>.gamePrice>li>a {
+.gameSpec>.gamePrice>li {
   color: white;
-  padding: 0 10px;
+  padding: 0 5px;
   font-size: 20px;
 }
 
@@ -159,11 +161,11 @@ select {
   position: relative;
 }
 
-.gameSpec>.gamePrice>li:first-child>a {
+.gameSpec>.gamePrice>li:first-child {
   color: #6d6d6d;
 }
 
-.gameSpec>.gamePrice>li:first-child>a::after {
+.gameSpec>.gamePrice>li:first-child::after {
   position: absolute;
   content: '';
   left: 8px;
