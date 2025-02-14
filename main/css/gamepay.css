@@ -135,31 +135,36 @@ body{background-color: #181818; color: white;}
 }
 .wrapper>.user>.user-emoji{
     position: relative;
-
+  
 }
 .wrapper>.user>.user-emoji>ul{}
+.wrapper>.user>.user-emoji>ul>li{
+    width: 200px;
+    height: auto;
+    display: flex;
+    text-align: center;
+    
+}
 .wrapper>.user>.user-emoji>ul>li>span{
-    /* position: absolute; */
-    right: 55%;
     display: block;
 
     text-align: center;
-    
+    font-size: 40px; 
+    padding: 10px 45px;
 }
-.wrapper>.user>.user-emoji>ul>li>span:nth-child(1){
-    text-align: center;
-    font-size: 40px;
-    line-height: 40px;
-    
+.wrapper>.user>.user-emoji>ul>li>a>.material-symbols-outlined{
+    width: 50px;
+    height:50px;
+
+    padding-left: 20px;
+    margin-top: 15px;
+    font-size: 50px;
 }
-.wrapper>.user>.user-emoji>ul>li>span:nth-child(2){
-    position: absolute;
-    font-size: 40px;
-    /* top: 20%; */
+.wrapper>.user>.user-emoji>ul>li>a:nth-child(1){
+    :hover{color: #31D236;}
 }
-.wrapper>.user>.user-emoji>ul>li>a{
-    width: 120px;
-    height: 120px;
+.wrapper>.user>.user-emoji>ul>li>a:nth-child(2){
+    :hover{color:#AA2828;}
 }
 
 .wrapper>.user>.chart>.pie{
@@ -242,8 +247,11 @@ body{background-color: #181818; color: white;}
     left: 95%;
     justify-content: center;
     align-items: center;
-   
-    
+}
+.wrapper>.bottom-right>.right>.left>.left-btn::after{  
+    content: "";
+    display: block;
+    clear: both;
 }
 .wrapper>.bottom-right>.slider{
     position: relative;
@@ -268,19 +276,19 @@ body{background-color: #181818; color: white;}
 
 }
 .wrapper>.bottom-right>.slider>.img:nth-child(1){
-    /* background-image: url(image/dlc1.jpg); */
-    animation-delay: ;
+    background-image: url(image/dlc1.jpg);
+    animation-delay: 0;
 }
 .wrapper>.bottom-right>.slider>.img:nth-child(2){
-    /* background-image: url(image/dlc2.jpg); */
-    animation-delay: -7.5s;
+    background-image: url(image/dlc2.jpg);
+    animation-delay: -2.5s;
 }
 .wrapper>.bottom-right>.slider>.img:nth-child(3){
-    /* background-image: url(image/dlc3.jpg); */
-    animation-delay: -7.5s;
+    background-image: url(image/dlc3.jpg);
+    animation-delay: -5s;
 }
 .wrapper>.bottom-right>.slider>.img:nth-child(4){
-    /* background-image: url(image/dlc4.jpg); */
+    background-image: url(image/dlc4.jpg);
     animation-delay: -7.5s;
 }
 
@@ -327,6 +335,6 @@ body{background-color: #181818; color: white;}
       animation-timing-function: step-end;
     }
     100% {
-      transform: translateX(0);
+      transform: translateX(100%);
     }
   }
