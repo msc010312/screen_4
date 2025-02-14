@@ -252,7 +252,7 @@ body{background-color: #181818; color: white;}
 }
 .wrapper>.bottom-right>.slider>.img:nth-child(1){
     /* background-image: url(image/dlc1.jpg); */
-    animation-delay: 0;
+    animation-delay: ;
 }
 .wrapper>.bottom-right>.slider>.img:nth-child(2){
     /* background-image: url(image/dlc2.jpg); */

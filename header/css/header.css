@@ -4,9 +4,10 @@
     position: fixed;
     display: flex;
     width: 100vw;
-    height: 160px;
+    height: 150px;
     background: #0f0f10;
     z-index: 999;
+    padding: 0 15px;
 }
 
 .logo {
@@ -19,7 +20,7 @@
     height: 100%;
 }
 
-.logo>img {
+.logo>a>img {
     height: 150px;
 }
 
@@ -46,35 +47,39 @@
     border-radius: 5px;
 }
 
+.hNav>li>.material-symbols-outlined {
+    position: absolute;
+    right: 10%;
+    line-height: 50px;
+}
+
+.hNav>li:nth-child(n+3):hover .material-symbols-outlined {
+    transform: rotate(90deg);
+    transition: all 0.3s;
+}
 
 .hNav>li>a {
     color: #fff;
 }
 
-.hNav>li>span::after {
-    content: url("/asset/r_arrow.svg");
-    position: absolute;
-    margin-top: 3px;
+.hNav>li>span {
+    transition: all 0.3s;
 }
 
 .hNav>li:nth-child(n+3):hover {
-    background: #CB863D;
-    transition: all 0.3s;
-}
-
-.hNav>li:nth-child(n+3):hover span::after {
-    transform: rotate(90deg);
-    transition: all 0.3s;
+    box-shadow: 0 1px inset #cb863d;
+    color: #cb863d;
 }
 
 .hNav>li:nth-child(n+3):hover .smallList {
     transition: all 0.3s;
-    display: block;
+    visibility: visible;
 }
 
 .smallList {
     position: absolute;
-    display: none;
+    display: block;
+    visibility: hidden;
     top: 100%;
     width: 100%;
     padding-top: 5px;
@@ -84,8 +89,9 @@
 
 .smallList>li {
     height: 50px;
-    padding: 10px 10px;
-    border-bottom: 3px solid #cb863d;
+    padding: 10px 5px;
+    border-bottom: 2px solid #cb863d;
+    border-radius: 5px 5px 0 0;
 }
 
 .smallList>li>a {
@@ -106,12 +112,13 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 300px;
     flex: 1;
+    margin: 0 15px 0 10px;
 }
 
 .hSearchBar {
     position: relative;
+    width: 270px;
 }
 
 .hSearchBar form {
@@ -138,9 +145,10 @@
 .sign {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     flex: 1;
+    gap: 15px;
 }
 
 .sign>img {
@@ -151,46 +159,50 @@
 
 .account {
     position: relative;
-    width: 100px;
+    width: 120px;
     color: #fff;
-    margin-left: 20px;
 }
 
-.account span {
+.acSort {
     position: relative;
-    display: block;
-    height: 40px;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
     font-size: 18px;
-    padding: 10px 10px 0 10px;
-    align-items: center;
 }
 
-.account span::after {
-    content: url("/asset/r_arrow2.svg");
+.acSort>span {
+    transition: all 0.3s;
+}
+
+.acSort .material-symbols-outlined {
     position: absolute;
+    line-height: 50px;
 }
 
-.account:hover span::after {
+.account:hover .acSort {
+    box-shadow: 0 1px inset #cb863d;
+    border-radius: 5px;
+}
+
+.account:hover .material-symbols-outlined {
     transform: rotate(90deg);
-    transition: all 0.3s;
-}
-
-.account:hover span {
-    background: #7b7a7a;
-    transition: all 0.3s;
 }
 
 .account:hover .acList {
-    transition: all 0.3s;
-    display: block;
+    visibility: visible;
 }
 
 .acList {
     position: absolute;
-    display: none;
-    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    width: 100%;
     background: #1d1d21;
-    padding: 10px 15px;
+    padding: 10px 0;
 }
 
 .acList>li {
@@ -201,7 +213,12 @@
     color: #fff;
 }
 
-/* 1024width이하 메뉴 */
+.acList>li>a:hover {
+    color: #cb863d;
+    transition: all 0.3s;
+}
+
+/* 1120width이하 메뉴 */
 .hamMenu {
     position: relative;
     display: flex;
@@ -216,7 +233,7 @@
 }
 
 .hamMenu:hover .hamList {
-    display: block;
+    visibility: visible;
     transition: all 0.3s;
 }
 
@@ -235,10 +252,10 @@
 
 .hamList {
     position: absolute;
-    display: none;
+    visibility: hidden;
     width: 30vw;
     /* 스크롤바 너비만큼 left 수정필요 */
-    left: calc(-32vw + 100%);
+    left: calc(-30vw + 100%);
     height: 500px;
     background: #262322;
 }
@@ -248,7 +265,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 15px;
     height: 399px;
     border-bottom: 1px solid #CB863D;
 }
@@ -258,7 +274,8 @@
     flex: 1;
     display: flex;
     align-items: center;
-    padding: 0 15px;
+    padding: 0 25px;
+    border-bottom: 1px solid #CB863D;
 }
 
 .hamSearch form input {
@@ -344,8 +361,18 @@
     height: 50px;
 }
 
-/* 1024width 반응형 */
-@media (max-width: 1024px) {
+/* 1260width 반응형 */
+@media (max-width: 1260px) {
+    .sign>img {
+        display: none;
+    }
+    .sign {
+        justify-content: center;
+    }
+}
+
+/* 1120width 반응형 */
+@media (max-width: 1120px) {
     .hSearch,.sign {
         display: none;
     }
@@ -355,35 +382,10 @@
     }
 }
 
-@media(min-width: 1025px) {
+@media(min-width: 1121px) {
     .hamMenu {
         display: none;
     }
 }
 
-/* 임시영역(지워도 무방) */
-/* body {
-    width: 100vw;
-    background: #181818;
-}
 
-.pagew {
-    position: relative;
-    display: block;
-    width: 1200px;
-    height: 100%;
-    margin: 0 auto;
-}
-
-.main {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: #3A342E;
-}
-
-.footer {
-    position: relative;
-    background-color: #262322;
-    height: 200px;
-} */
