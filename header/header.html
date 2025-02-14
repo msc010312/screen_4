@@ -1,10 +1,18 @@
+<!DOCTYPE html>
 <html lang="en">
+<head>
+    <!-- google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
 <body>
     <!-- 헤더영역 -->
     <div class="header">
         <!-- 로고 -->
         <div class="logo">
-            <img src="asset/dino.png" alt="logo">
+            <a href="../main/index.html">
+                <img src="asset/dino.png" alt="logo">
+            </a>
         </div>
         <!-- 네비게이션 -->
         <ul class="hNav">
@@ -46,7 +54,7 @@
         <!-- 검색바 -->
         <div class="hSearch">
             <div class="hSearchBar">
-                <form action="">
+                <form action="url">
                     <img src="asset/search.svg" alt="search">
                     <input type="search" placeholder="Search for...">
                 </form>
@@ -68,7 +76,7 @@
                         <a href="../main/login.html">로그인</a>
                     </li>
                     <li>
-                        <a href="#">회원가입</a>
+                        <a href="../main/user.html">회원가입</a>
                     </li>
                 </ul>
             </div>
@@ -80,7 +88,7 @@
             </div>
             <div class="hamList">
                 <div class="hamSearch">
-                    <form action="">
+                    <form action="url">
                         <img src="asset/search.svg" alt="">
                         <input type="search" placeholder="Search">
                     </form>
@@ -123,9 +131,9 @@
                         <img src="asset/account.svg" alt="">
                         <span>비회원</span>
                     </div>
-                    <button class="signbtn">
+                    <a href="../main/login.html" class="signbtn">
                         <img src="asset/login.svg" alt="">
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
