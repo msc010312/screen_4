@@ -49,14 +49,21 @@ body{background-color: #181818; color: white;}
 }
 /* wr-pr-list */
 .wrapper>.price>.list{
-    position: absolute;
+    /* position: absolute; */
     height: 125px;
+    padding-top: 10px;
+    padding-left: 10px;
+
 }
 .wrapper>.price>.list>span{ 
     font-size: 20px;
+   
 }
 .wrapper>.price>.list>ul>li{ 
     font-size: 20px;
+    padding-top: 7px;
+    padding-left: 10px;
+
 }
 /* wr-pr-btn */
 .wrapper>.price>.btn{
@@ -95,10 +102,9 @@ body{background-color: #181818; color: white;}
     width: 450px;
     justify-content: end;
 
-    
     position: absolute;
     right: 1px;
-    top: 15%;
+    top: 14%;
 
   border-top: 3px solid orange;  
 }
@@ -131,26 +137,36 @@ body{background-color: #181818; color: white;}
     position: relative;
 
 }
-
 .wrapper>.user>.user-emoji>ul{}
 .wrapper>.user>.user-emoji>ul>li>span{
-    font-size: 40px;
-    position: absolute;
+    /* position: absolute; */
     right: 55%;
+    display: block;
+
+    text-align: center;
     
 }
-.wrapper>.user>.user-emoji>ul>li>svg:nth-child(1){
-    padding-bottom: 7%;
-    fill: #72DA58;
+.wrapper>.user>.user-emoji>ul>li>span:nth-child(1){
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    
 }
-.wrapper>.user>.user-emoji>ul>li>svg:nth-child(2){
+.wrapper>.user>.user-emoji>ul>li>span:nth-child(2){
+    position: absolute;
+    font-size: 40px;
+    /* top: 20%; */
+}
+.wrapper>.user>.user-emoji>ul>li>a{
+    width: 120px;
+    height: 120px;
+}
 
-}
 .wrapper>.user>.chart>.pie{
     display:inline-block;
     width: 120px;
     height: 120px;
-    background: conic-gradient( #AA2828 50% 50%,#72DA58 50% 50%);
+    background: conic-gradient(#AA2828 50% 50%,#72DA58 50% 50%);
     border-radius: 50%;  
    
     position: absolute;
@@ -179,6 +195,7 @@ body{background-color: #181818; color: white;}
 .wrapper>.bottom-left>div>ul>li>p:nth-child(1){
     font-size: 20px;
     font-weight: bolder;
+    margin-top: 8%;
 }
 .wrapper>.bottom-left>div>ul>li>p:nth-child(2){
     font-size: 13px;
@@ -190,11 +207,11 @@ body{background-color: #181818; color: white;}
     text-align: center;
     justify-content: center;
     font-size: 13px;
-    line-height: 10px;
+    line-height: 20px;
     color: #A8B5C0;    
 }
 .wrapper>.bottom-left>div>ul>li:last-child{
-    margin-top: 70px;
+    margin-top: 90px;
 }
 
 
