@@ -134,8 +134,7 @@ body{background-color: #181818; color: white;}
     
 }
 .wrapper>.user>.user-emoji{
-    position: relative;
-  
+    position: relative; 
 }
 .wrapper>.user>.user-emoji>ul{}
 .wrapper>.user>.user-emoji>ul>li{
