@@ -101,34 +101,43 @@
             </div>
         </section>   
         <section class="bottom-right">
-            <div class="right">
-                <li>DLC</li>
-                <div class="slider-btn">
-                    <div class="l-left-btn">
-                        <span><img src="image/back.png" width="30px" height="30px"></span>
-                        <span class="left-btn"></span>
+            <div class="slider-block">
+                <input type="radio" id="slide1" name="slideradio" checked>
+                <input type="radio" id="slide2" name="slideradio">
+                <input type="radio" id="slide3" name="slideradio">
+                <div class="slider-wrapper">
+                    <div class="item">
+                        <p>DLC</p>
+                        <label for="slide3" class="prev">
+                            <span class="material-symbols-outlined">arrow_back_ios</span>
+                        </label>
+                        <label for="slide2" class="next">
+                            <span class="material-symbols-outlined">arrow_forward_ios</span>
+                        </label>
+                        <div class="show one"></div>
                     </div>
-                    <div class="l-right-btn">
-                        <span><img src="image/next.png" width="30px" height="30px"></span>
-                        <div class="right-btn"></div>
+                    <div class="item">
+                        <p>DLC</p>
+                        <label for="slide1" class="prev">
+                            <span class="material-symbols-outlined">arrow_back_ios</span>
+                        </label>
+                        <label for="slide3" class="next">
+                            <span class="material-symbols-outlined">arrow_forward_ios</span>
+                        </label>
+                        <div class="show two"></div>
+                    </div>
+                    <div class="item">
+                        <p>DLC</p>
+                        <label for="slide2" class="prev">
+                            <span class="material-symbols-outlined">arrow_back_ios</span>
+                        </label>
+                        <label for="slide1" class="next">
+                            <span class="material-symbols-outlined">arrow_forward_ios</span>
+                        </label>
+                        <div class="show three"></div>
                     </div>
                 </div>
             </div>
-            <div class="slider__wrap">
-                <div class="slider__img">
-                    <div class="slider__inner">
-                        <div class="slider s1"><img src="../main/image/dlc1.jpg" alt="dlc1" width="450px" height="235px"></div>
-                        <div class="slider s2"><img src="../main/image/dlc2.jpg" alt="dlc2" width="450px" height="235px"></div>
-                        <div class="slider s3"><img src="../main/image/dlc3.jpg" alt="dlc3" width="450px" height="235px"></div>
-                        <div class="slider s4"><img src="../main/image/dlc4.jpg" alt="dlc4" width="450px" height="235px"></div>
-                    </div>
-                </div>
-            </div>            
-            <!-- <div class="slider">
-                <div class="slide"></div>
-                <div class="slide"></div>
-                <div class="slide"></div>
-            </div> -->
         </section>
         <section class="bottom-right-under">
             <div>비슷한 게임</div>
@@ -146,45 +155,6 @@
     <footer id="footerContainer">
         
     </footer>
-
-
-<script>
-    //선택자
-    const sliderWrap = document.querySelector(".slider__wrap");
-    const sliderImg = sliderWrap.querySelector(".slider__img");         //보여지는 영역
-    const sliderInner = sliderWrap.querySelector(".slider__inner");     //움직이는 영역
-    const slider = sliderWrap.querySelectorAll(".slider");              //개별 이미지
-
-    let currentIndex = 0;                                               //현재 보이는 이미지
-    let sliderCount = slider.length;                                    //이미지 갯수
-    let sliderInterval = 2000;                                          //이미지 변경 간격 시간
-    let sliderWidth = slider[0].offsetWidth;                            //이미지 가로 값
-    let sliderClone = sliderInner.firstElementChild.cloneNode(true);    //첫번째 이미지 복사
-
-    // 복사한 첫 번째 이미지 마지막에 붙여넣기
-    sliderInner.appendChild(sliderClone);
-
-    function sliderEffect(){
-        currentIndex++;
-
-        sliderInner.style.transition = "all 0.6s";
-        sliderInner.style.transform = "translateX(-"+ sliderWidth * currentIndex +"px)";
-
-        //마지막 이미지에 위치 했을 때
-        if(currentIndex == sliderCount){
-            setTimeout(() => {
-                sliderInner.style.transition = "0s";
-                sliderInner.style.transform = "translateX(0px)";
-            }, 700);
-
-            currentIndex = 0;
-        }
-
-    }
-
-    setInterval(sliderEffect, sliderInterval);
-</script>
-    
 
 </body>
 </html>
