@@ -1,18 +1,172 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        $("#headers").load("../header/header.html"); 
-    </script>
+    <!-- link -->
+    <script src="js/link.js" defer></script>
+    <!-- css import -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- swiper -->
+    <script src="js/slider.js" defer></script>
 </head>
 
 <body>
-    <div id="header">
+    <div class="wrapper">
+        <!-- header 영역 -->
+        <header id="headerContainer">
 
+        </header>
+        <!-- main 영역 -->
+        <main class="main">
+            <div class="slider">
+                <div class="swiper mySwiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="asset/game5.avif" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="asset/game6.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="asset/game4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="pagew">
+                <section class="content">
+                    <div class="board">
+                        <!-- 이 부분을 복사 -->
+                        <div class="boardSec">
+                            <span>공지사항</span>
+                            <ul class="boardList">
+                                <li>
+                                    <a href="#">공지사항 입니다</a>
+                                </li>
+                                <li>
+                                    <a href="#">공지사항 입니다</a>
+                                </li>
+                                <li>
+                                    <a href="#">공지사항 입니다</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="boardSec">
+                            <span>공지사항</span>
+                            <ul class="boardList">
+                                <li>
+                                    <a href="#">공지사항 입니다</a>
+                                </li>
+                                <li>
+                                    <a href="#">공지사항 입니다</a>
+                                </li>
+                                <li>
+                                    <a href="#">공지사항 입니다</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="boardSec">
+                            <span>공지사항</span>
+                            <ul class="boardList">
+                                <li>
+                                    <a href="#">공지사항 입니다</a>
+                                </li>
+                                <li>
+                                    <a href="#">공지사항 입니다</a>
+                                </li>
+                                <li>
+                                    <a href="#">공지사항 입니다</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="subSlider">
+                        <!-- 이 부분을 복사 -->
+                        <div class="subSliderSec new">
+                            <div class="subStxt">
+                                <span>최신게임</span>
+                                <a href="#">
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="subSimg">
+                                <a href="#">
+                                    <img src="asset/game2.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="asset/game2.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="asset/game2.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="subSliderSec pop">
+                            <div class="subStxt">
+                                <span>인기게임</span>
+                                <a href="#">
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="subSimg">
+                                <a href="#">
+                                    <img src="asset/game2.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="asset/game2.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="asset/game2.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="subSliderSec sale">
+                            <div class="subStxt">
+                                <span>세일중인 게임</span>
+                                <a href="#">
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="subSimg">
+                                <a href="#">
+                                    <img src="asset/game2.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="asset/game2.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="asset/game2.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </section>
+            </div>
+        </main>
+        <!-- footer 영역 -->
+        <footer id="footerContainer">
+
+        </footer>
     </div>
 </body>
 
