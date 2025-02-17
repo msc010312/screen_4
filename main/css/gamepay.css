@@ -75,7 +75,7 @@ body{background-color: #181818; color: white;}
     right: 1.5%;
     top: 1%;
 }
-.wrapper>.price>.btn>li{
+.wrapper>.price>.btn>ul>li{
     border-radius: 10px;
     width: 80px;
     height: 25px;
@@ -86,18 +86,18 @@ body{background-color: #181818; color: white;}
     margin-bottom: 12px;
     font-size: 14px;
 }
-.wrapper>.price>.btn>li>a{
+.wrapper>.price>.btn>ul>li>a{
     color: white;
 }
-.wrapper>.price>.btn>li:nth-child(1){
+.wrapper>.price>.btn>ul>li:nth-child(1){
     background-color: #4a4a4a;
     :hover{color: #1d1c1c;}
 }
-.wrapper>.price>.btn>li:nth-child(2){
+.wrapper>.price>.btn>ul>li:nth-child(2){
     background-color: #294396;
     :hover{color: #0c1e5a;}
 }
-.wrapper>.price>.btn>li:nth-child(3){
+.wrapper>.price>.btn>ul>li:nth-child(3){
     background-color: #31D236;
     :hover{color: #0f4d11}
 }
@@ -114,7 +114,10 @@ body{background-color: #181818; color: white;}
 
   border-top: 3px solid #CB863D;  
 }
-.wrapper>.price>.pay-btn>li{
+.wrapper>.price>.pay-btn>ul{
+    display: flex;
+}
+.wrapper>.price>.pay-btn>ul>li{
     background-color: orange;
     
     border-radius: 10px;
@@ -129,7 +132,7 @@ body{background-color: #181818; color: white;}
 
     :hover{color: rgb(158, 105, 6);}
 }
-.wrapper>.price>.pay-btn>li>a{
+.wrapper>.price>.pay-btn>ul>li>a{
     color: white;
     font-size: 15px;
 }
@@ -190,8 +193,8 @@ body{background-color: #181818; color: white;}
     background-color: #262322;
 }
 .wrapper>.bottom-left>div>ul{
-    margin: 0;
-    padding : 0 15px 0 15px;
+    margin: 0; 
+    padding : 0 15px 0 0;
 
 }
 .wrapper>.bottom-left>div>ul>li>p{
@@ -214,7 +217,8 @@ body{background-color: #181818; color: white;}
 .wrapper>.bottom-left>div>ul>li>p:nth-child(3){
     font-size: 13px;
 }
-.wrapper>.bottom-left>div>ul>li>span{
+.wrapper>.bottom-left>div>ul>li>div{
+    height: 100%;
     text-align: center;
     justify-content: center;
     font-size: 13px;
@@ -327,7 +331,10 @@ input[type="radio"] {
     padding-left: 2%;
 }
 .wrapper>.bottom-right-under>section>.image{
+    padding: 10px 8px 0 13px;
+    align-items: center;
+}
+.wrapper>.bottom-right-under>section>.image>ul{
     display: flex;
     justify-content: space-between;
-    padding: 10px 8px 0 8px;
 }
