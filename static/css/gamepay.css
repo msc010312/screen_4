@@ -151,7 +151,7 @@ body{background-color: #181818; color: white;}
 .wrapper>.user>.user-emoji{
     position: relative; 
 }
-.wrapper>.user>.user-emoji>ul{}
+
 .wrapper>.user>.user-emoji>ul>li{
     width: 200px;
     height: auto;
@@ -279,15 +279,15 @@ body{background-color: #181818; color: white;}
 }
 
 .show.one {
-    background-image: url(../image/dlc1.jpg);
+    background-image: url(../asset/dlc1.jpg);
     background-size: 450px 250px;
 }
 .show.two {
-    background-image: url(../image/dlc2.jpg);
+    background-image: url(../asset/dlc2.jpg);
     background-size: 450px 250px;
 }
 .show.three {
-    background-image: url(../image/dlc3.jpg);
+    background-image: url(../asset/dlc3.jpg);
     background-size: 450px 250px;
 }
 
@@ -304,7 +304,6 @@ body{background-color: #181818; color: white;}
 .prev {
     padding-right: 50px;
 }
-.next {}
 
 input[type="radio"] {
     display: none;
