@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 50px 0;
+    /* padding: 50px 0; */
 }
 
 .main{
@@ -16,17 +16,18 @@
     height: 100%;
     border-top: 1px solid goldenrod;
 }
+
 .id>input{
     margin-bottom: 50px;
     margin-top: 50px;
-    height: 65px;
+    height: 55px;
     width: 100%;
 }
 .password{
     margin-bottom: 50px;
 }
 .password>input{
-    height: 65px;
+    height: 50px;
     width: 100%;
 }
 .password>a{
@@ -43,8 +44,8 @@
     gap: 30px;
 }
 .log-in-link-btn>input{
-    height: 65px;
-    width: 610px;
+    height: 50px;
+    width: 375px;
     background-color: black;
     margin-top: 50px;
     cursor: pointer;
@@ -71,7 +72,7 @@
     color: rgba(255, 255, 255, 0.705);
 }
 .log-in-btn>a{
-    height: 65px;
+    height: 50px;
     width: 100%;
     background-color: royalblue;
     color: white;

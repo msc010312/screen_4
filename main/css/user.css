@@ -13,10 +13,10 @@
 
 .id {
     margin-bottom: 50px;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 .id>input{
-    height: 65px;
+    height: 50px;
     width: 100%;
 }
 .email {
@@ -28,12 +28,12 @@
     gap: 30px;
 }
 .email>input{
-    height: 65px;
-    width: 610px;
+    height: 50px;
+    width: 375px;
 }
 .email>button{
-    width: 80px;
-    height: 55px;
+    width: 60px;
+    height: 40px;
     cursor: pointer;
 }
 
@@ -41,26 +41,27 @@
     margin-bottom: 50px;
 }
 .password>input{
-    height: 65px;
+    height: 50px;
     width: 100%;
 }
 .password>ul>li{
     color: white;
     list-style: none;
+    font-size: .7rem;
 }
 
 .pw-check {
     margin-bottom: 50px;
 }
 .pw-check>input{
-    height: 65px;
+    height: 50px;
     width: 100%;
 }
 .log-in-btn {
     margin-bottom: 50px;
 }
 .log-in-btn>a{
-    height: 65px;
+    height: 50px;
     width: 100%;
     background-color: royalblue;
     color: white;
@@ -78,8 +79,8 @@
 }
 
 .log-in-link-btn>input{
-    height: 65px;
-    width: 610px;
+    height: 50px;
+    width: 375px;
     background-color: black;
     margin-top: 50px;
     cursor: pointer;
