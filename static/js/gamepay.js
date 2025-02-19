@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".prev, .next").forEach(button => {
         button.addEventListener("click", () => {
             clearInterval(autoSlideInterval);
-            setTimeout(startAutoSlide, 5000); 
+            setTimeout(startAutoSlide, 50000); 
         });
     });
 
