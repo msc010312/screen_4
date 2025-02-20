@@ -3,7 +3,7 @@
     position: relative;
     width: 100%;
     height: 600px;
-    border-bottom: 3px solid #CB863D;
+    /* border-bottom: 3px solid #CB863D; */
     background: #1b1918;;
     /* 지워도 무관 */
 }
