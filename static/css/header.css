@@ -147,17 +147,40 @@
     gap: 15px;
 }
 
-.sign>img {
+/* .sign>img {
     display: none;
     width: 50px;
     height: 50px;
-}
+} */
 
 .account {
     position: relative;
-    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
     height: 100%;
+}
+
+.account>a {
+    position: relative;
+    display: block;
+    transition: all 0.2s;
     color: #fff;
+}
+
+.account>a:hover {
+    color: #CB863D;
+}
+
+.account>a::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    right: -15px;
 }
 
 .signList {
@@ -166,7 +189,6 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 100%;
     gap: 15px;
 }
 
