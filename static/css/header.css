@@ -2,7 +2,7 @@
     position: fixed;
     display: flex;
     width: 100vw;
-    height: 150px;
+    height: 120px;
     background: #0f0f10;
     z-index: 999;
     padding: 0 15px;
@@ -11,7 +11,7 @@
 .logo {
     position: relative;
     display: flex;
-    flex: 1;
+    flex: 0.8;
     justify-content: center;
     align-items: end;
     width: 385px;
@@ -19,7 +19,7 @@
 }
 
 .logo>a>img {
-    height: 150px;
+    height: 120px;
 }
 
 .hNav {
@@ -40,9 +40,8 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 50%;
+    height: 100%;
     width: 100%;
-    border-radius: 5px;
 }
 
 .hNav>li>.material-symbols-outlined {
@@ -65,7 +64,6 @@
 }
 
 .hNav>li:nth-child(n+3):hover {
-    box-shadow: 0 1px inset #cb863d;
     color: #cb863d;
 }
 
@@ -149,23 +147,67 @@
     gap: 15px;
 }
 
-.sign>img {
-    display: block;
+/* .sign>img {
+    display: none;
     width: 50px;
     height: 50px;
-}
+} */
 
 .account {
     position: relative;
-    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 100%;
+}
+
+.account>a {
+    position: relative;
+    display: block;
+    transition: all 0.2s;
     color: #fff;
 }
 
+.account>a:hover {
+    color: #CB863D;
+}
+
+.account>a::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    right: -15px;
+}
+
+.signList {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 15px;
+}
+
+.signList>li>a {
+    color: #fff;
+    transition: all 0.2s;
+}
+
+.signList>li>a:hover {
+    color: #cb863d;
+}
+
+
+/* 디자인생각하기 */
 .acSort {
     position: relative;
     text-align: center;
     line-height: 50px;
-    height: 50px;
+    height: 100%;
     font-size: 18px;
 }
 
@@ -176,11 +218,6 @@
 .acSort .material-symbols-outlined {
     position: absolute;
     line-height: 50px;
-}
-
-.account:hover .acSort {
-    box-shadow: 0 1px inset #cb863d;
-    border-radius: 5px;
 }
 
 .account:hover .material-symbols-outlined {
