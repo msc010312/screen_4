@@ -7,7 +7,7 @@ loginbtn.addEventListener('click', (e) => {
         return;
 
     alert("로그인 성공!");
-    window.location.href = "http://127.0.0.1:5502/pages/main/index.html"
+    window.location.href = "/pages/main/index.html"
 
 })
 
