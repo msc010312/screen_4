@@ -6,6 +6,10 @@ form{
     padding: 50px 0;
 }
 
+input::placeholder{
+    font-size: 14px;
+}
+
 .login-form {
     height: 100%;
     border-top: 1PX solid goldenrod;
@@ -39,23 +43,16 @@ form{
 
 .password {
     margin-bottom: 50px;
-    position: relative;
 }
 .password>input{
     height: 50px;
     width: 100%;
 }
-i{
-    position: absolute;
-    left: 90%;
-    top: 35%;
-    color: gray;
-}
 
 .password>ul>li{
     color: white;
     list-style: none;
-    font-size: .7rem;
+    font-size: .8rem;
 }
 
 .pw-check {

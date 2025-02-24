@@ -7,14 +7,15 @@ joinbtn.addEventListener('click', (e) => {
         return ;
 
     alert("회원가입을 완료하였습니다.");
+    window.location.href = "http://127.0.0.1:5502/pages/user/login.html"
 
 })
 
 
 function isValid(form) {
-    const idGap = /^[ㄱ-ㅎ|가-힣|a-z|A-Z|0-9|]+$/ ;
+    const idGap = /^[ㄱ-ㅎ|가-힣|a-z|A-Z|0-9|]{2,9}$/ ;
     const emailGap = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-za-z0-9\-]+/;
-    const pwGap = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+~`\-={}[\]:;"'<>,.?/\\]).{10,}$/;
+    const pwGap = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+~`\-={}[\]:;"'<>,.?/\\]).{8,16}$/;
 
     if (form.id.value == "") {
         alert("이름을 입력해주세요")
@@ -31,6 +32,11 @@ function isValid(form) {
     if (!emailGap.test(form.email.value)) {
         alert("이메일을 다시 한 번 확인해주세요")
         form.email.value.focus();
+        return false;
+    }
+
+    if(form.email.value == ""){
+        alert("이메일을 입력해주세요")
         return false;
     }
 
@@ -52,19 +58,4 @@ function isValid(form) {
         return false;
     }
     return true
-}
-
-const [isShowPwChecked, setShowPwChecked] = useState(false)
-const pwRef = useRef(null)
-
-const handleShowPwChecked = async () => {
-  const pw = await pwRef.current
-  if (pw === null) return
-
-  await setShowPwChecked(!isShowPwChecked)
-  if(!isShowPwChecked) {
-    pw.type = 'text';
-  } else {
-    pw.type = 'password';
-  }
 }

@@ -26,18 +26,19 @@
         <!-- main 영역 -->
         <div class="main">
             <div class="pagew">
-                <div class="loginContent">
+
+                <form name="login">
                     <h1 class="a">로그인</h1>
                     <div class="login-form">
                         <div class="id">
-                            <input type="text" placeholder="email.com">
+                            <input type="text" placeholder="email.com" name="email">
                         </div>
                         <div class="password">
                             <input type="password" name="pw" placeholder="비밀번호">
                             <a href="">비밀번호를 잊어버리셨나요?</a>
                         </div>
                         <div class="log-in-btn">
-                            <a href="../main/index.html">로그인</a>
+                            <a href="javascript:vold(0)">로그인</a>
                         </div>
                         <div class="log-in-link-btn">
                             <button type="button"><img src="../../static/asset/gogle_login.jpg"></button>
@@ -48,7 +49,8 @@
                         </div>
 
                     </div>
-                </div>
+                </form>
+
             </div>
         </div>
         <!-- footer 영역 -->
