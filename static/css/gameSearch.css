@@ -6,6 +6,7 @@
   background-color: #24201B;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .searchBar>.select {
