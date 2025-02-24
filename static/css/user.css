@@ -43,17 +43,10 @@ input::placeholder{
 
 .password {
     margin-bottom: 50px;
-    position: relative;
 }
 .password>input{
     height: 50px;
     width: 100%;
-}
-i{
-    position: absolute;
-    left: 90%;
-    top: 35%;
-    color: gray;
 }
 
 .password>ul>li{

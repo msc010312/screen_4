@@ -59,18 +59,3 @@ function isValid(form) {
     }
     return true
 }
-
-const [isShowPwChecked, setShowPwChecked] = useState(false)
-const pwRef = useRef(null)
-
-const handleShowPwChecked = async () => {
-  const pw = await pwRef.current
-  if (pw === null) return
-
-  await setShowPwChecked(!isShowPwChecked)
-  if(!isShowPwChecked) {
-    pw.type = 'text';
-  } else {
-    pw.type = 'password';
-  }
-}
