@@ -7,7 +7,7 @@ joinbtn.addEventListener('click', (e) => {
         return ;
 
     alert("회원가입을 완료하였습니다.");
-    window.location.href = "http://127.0.0.1:5502/pages/user/login.html"
+    window.location.href = "/pages/user/login.html"
 
 })
 
