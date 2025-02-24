@@ -35,6 +35,11 @@ function isValid(form) {
         return false;
     }
 
+    if(form.email.value == ""){
+        alert("이메일을 입력해주세요")
+        return false;
+    }
+
     if (form.pw.value == "") {
         alert("비밀번호를 입력해주세요")
         form.pw.value.focus();
