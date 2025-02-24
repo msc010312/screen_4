@@ -1,9 +1,13 @@
-.userContent{
+form{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 50px 0;
+}
+
+input::placeholder{
+    font-size: 14px;
 }
 
 .login-form {
@@ -44,10 +48,11 @@
     height: 50px;
     width: 100%;
 }
+
 .password>ul>li{
     color: white;
     list-style: none;
-    font-size: .7rem;
+    font-size: .8rem;
 }
 
 .pw-check {
@@ -78,21 +83,22 @@
     gap: 30px;
 }
 
-.log-in-link-btn>input{
+.log-in-link-btn>button{
     height: 50px;
     width: 375px;
-    background-color: black;
     margin-top: 50px;
     cursor: pointer;
+    border: none;
+    border-radius: 50%;
+   
 }
-.log-in-link-btn>input:first-child{
-    border-color: blue;
-    color: blue;
+
+.log-in-link-btn>button>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
 }
-.log-in-link-btn>input:last-child{
-    border-color: yellow;
-    color: yellow;
-}
+
 .a {
     font-size: 4rem;
     color: white;

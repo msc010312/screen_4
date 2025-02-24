@@ -194,3 +194,38 @@ select {
   line-height: 30px;
   font-size: 20px;
 }
+
+.content{
+  display: flex;
+  flex-direction: column;
+}
+
+.content>.game-last{
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.content>.game-last>ul{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.content>.game-last>ul>li>a{
+  color: gray;
+}
+
+.content>.game-last>ul>li:nth-child(3)>a{
+  color: white;
+  font-weight: 600;
+
+}
+
+.content>.game-last>ul>li>a>span{
+  display: block;
+  justify-content: center;
+  align-items: center;
+}

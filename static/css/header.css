@@ -1,11 +1,13 @@
 .header {
     position: fixed;
     display: flex;
+    justify-content: space-between;
     width: 100vw;
     height: 120px;
-    background: #0f0f10;
+    background: #1b1918;
     z-index: 999;
     padding: 0 15px;
+    border-bottom: 3px solid #cb863d;
 }
 
 .logo {
@@ -13,19 +15,24 @@
     display: flex;
     flex: 0.8;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     width: 385px;
     height: 100%;
+    margin-left: 70px;
+    overflow: hidden;
 }
 
 .logo>a>img {
+    width: 120px;
     height: 120px;
+    scale: 1.2;
+
 }
 
 .hNav {
     position: relative;
     display: flex;
-    flex: 3;
+    flex: 2;
     justify-content: space-around;
     align-items: center;
     color: #fff;
@@ -57,6 +64,11 @@
 
 .hNav>li>a {
     color: #fff;
+    transition: all 0.3s;
+}
+
+.hNav>li>a:hover {
+    color: #cb863d;
 }
 
 .hNav>li>span {
@@ -79,7 +91,7 @@
     top: 100%;
     width: 100%;
     padding-top: 5px;
-    background: #1d1d21;
+    background: #262322;
     z-index: 999;
 }
 
@@ -108,13 +120,13 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    flex: 1;
+    flex: 0.8;
     margin: 0 15px 0 10px;
 }
 
 .hSearchBar {
     position: relative;
-    width: 270px;
+    width: 300px;
 }
 
 .hSearchBar form {
@@ -141,7 +153,6 @@
 .sign {
     position: relative;
     display: flex;
-    justify-content: left;
     align-items: center;
     flex: 1;
     gap: 15px;
@@ -262,7 +273,7 @@
     align-items: center;
 }
 
-.hamMenu:hover{
+.hamMenu:hover {
     background: #CB863D;
     transition: all 0.2s;
 }
@@ -401,6 +412,7 @@
     .sign>img {
         display: none;
     }
+
     .sign {
         justify-content: center;
     }
@@ -408,7 +420,9 @@
 
 /* 1120width 반응형 */
 @media (max-width: 1120px) {
-    .hSearch,.sign {
+
+    .hSearch,
+    .sign {
         display: none;
     }
 
@@ -422,5 +436,3 @@
         display: none;
     }
 }
-
-
