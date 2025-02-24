@@ -43,20 +43,20 @@
     border-top: 1px solid goldenrod;
     gap: 30px;
 }
-.log-in-link-btn>input{
+.log-in-link-btn>button{
     height: 50px;
     width: 375px;
-    background-color: black;
     margin-top: 50px;
     cursor: pointer;
+    border: none;
+    border-radius: 50%;
+   
 }
-.log-in-link-btn>input:first-child{
-    border-color: blue;
-    color: blue;
-}
-.log-in-link-btn>input:last-child{
-    border-color: yellow;
-    color: yellow;
+
+.log-in-link-btn>button>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
 }
 .a{
     font-size: 4rem;

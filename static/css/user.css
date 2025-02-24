@@ -1,4 +1,4 @@
-.userContent{
+form{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,11 +39,19 @@
 
 .password {
     margin-bottom: 50px;
+    position: relative;
 }
 .password>input{
     height: 50px;
     width: 100%;
 }
+i{
+    position: absolute;
+    left: 90%;
+    top: 35%;
+    color: gray;
+}
+
 .password>ul>li{
     color: white;
     list-style: none;
@@ -78,21 +86,22 @@
     gap: 30px;
 }
 
-.log-in-link-btn>input{
+.log-in-link-btn>button{
     height: 50px;
     width: 375px;
-    background-color: black;
     margin-top: 50px;
     cursor: pointer;
+    border: none;
+    border-radius: 50%;
+   
 }
-.log-in-link-btn>input:first-child{
-    border-color: blue;
-    color: blue;
+
+.log-in-link-btn>button>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
 }
-.log-in-link-btn>input:last-child{
-    border-color: yellow;
-    color: yellow;
-}
+
 .a {
     font-size: 4rem;
     color: white;

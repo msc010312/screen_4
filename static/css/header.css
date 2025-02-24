@@ -1,31 +1,38 @@
 .header {
     position: fixed;
     display: flex;
+    justify-content: space-between;
     width: 100vw;
-    height: 150px;
-    background: #0f0f10;
+    height: 120px;
+    background: #1b1918;
     z-index: 999;
     padding: 0 15px;
+    border-bottom: 3px solid #cb863d;
 }
 
 .logo {
     position: relative;
     display: flex;
-    flex: 1;
+    flex: 0.8;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     width: 385px;
     height: 100%;
+    margin-left: 70px;
+    overflow: hidden;
 }
 
 .logo>a>img {
-    height: 150px;
+    width: 120px;
+    height: 120px;
+    scale: 1.2;
+
 }
 
 .hNav {
     position: relative;
     display: flex;
-    flex: 3;
+    flex: 2;
     justify-content: space-around;
     align-items: center;
     color: #fff;
@@ -40,9 +47,8 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 50%;
+    height: 100%;
     width: 100%;
-    border-radius: 5px;
 }
 
 .hNav>li>.material-symbols-outlined {
@@ -58,6 +64,11 @@
 
 .hNav>li>a {
     color: #fff;
+    transition: all 0.3s;
+}
+
+.hNav>li>a:hover {
+    color: #cb863d;
 }
 
 .hNav>li>span {
@@ -65,7 +76,6 @@
 }
 
 .hNav>li:nth-child(n+3):hover {
-    box-shadow: 0 1px inset #cb863d;
     color: #cb863d;
 }
 
@@ -81,7 +91,7 @@
     top: 100%;
     width: 100%;
     padding-top: 5px;
-    background: #1d1d21;
+    background: #262322;
     z-index: 999;
 }
 
@@ -110,13 +120,13 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    flex: 1;
+    flex: 0.8;
     margin: 0 15px 0 10px;
 }
 
 .hSearchBar {
     position: relative;
-    width: 270px;
+    width: 300px;
 }
 
 .hSearchBar form {
@@ -143,29 +153,72 @@
 .sign {
     position: relative;
     display: flex;
-    justify-content: left;
     align-items: center;
     flex: 1;
     gap: 15px;
 }
 
-.sign>img {
-    display: block;
+/* .sign>img {
+    display: none;
     width: 50px;
     height: 50px;
-}
+} */
 
 .account {
     position: relative;
-    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 100%;
+}
+
+.account>a {
+    position: relative;
+    display: block;
+    transition: all 0.2s;
     color: #fff;
 }
 
+.account>a:hover {
+    color: #CB863D;
+}
+
+.account>a::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    right: -15px;
+}
+
+.signList {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 15px;
+}
+
+.signList>li>a {
+    color: #fff;
+    transition: all 0.2s;
+}
+
+.signList>li>a:hover {
+    color: #cb863d;
+}
+
+
+/* 디자인생각하기 */
 .acSort {
     position: relative;
     text-align: center;
     line-height: 50px;
-    height: 50px;
+    height: 100%;
     font-size: 18px;
 }
 
@@ -176,11 +229,6 @@
 .acSort .material-symbols-outlined {
     position: absolute;
     line-height: 50px;
-}
-
-.account:hover .acSort {
-    box-shadow: 0 1px inset #cb863d;
-    border-radius: 5px;
 }
 
 .account:hover .material-symbols-outlined {
@@ -225,7 +273,7 @@
     align-items: center;
 }
 
-.hamMenu:hover{
+.hamMenu:hover {
     background: #CB863D;
     transition: all 0.2s;
 }
@@ -364,6 +412,7 @@
     .sign>img {
         display: none;
     }
+
     .sign {
         justify-content: center;
     }
@@ -371,7 +420,9 @@
 
 /* 1120width 반응형 */
 @media (max-width: 1120px) {
-    .hSearch,.sign {
+
+    .hSearch,
+    .sign {
         display: none;
     }
 
@@ -385,5 +436,3 @@
         display: none;
     }
 }
-
-
