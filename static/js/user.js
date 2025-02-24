@@ -12,9 +12,9 @@ joinbtn.addEventListener('click', (e) => {
 
 
 function isValid(form) {
-    const idGap = /^[ㄱ-ㅎ|가-힣|a-z|A-Z|0-9|]+$/ ;
+    const idGap = /^[ㄱ-ㅎ|가-힣|a-z|A-Z|0-9|]{2,9}$/ ;
     const emailGap = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-za-z0-9\-]+/;
-    const pwGap = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+~`\-={}[\]:;"'<>,.?/\\]).{10,}$/;
+    const pwGap = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+~`\-={}[\]:;"'<>,.?/\\]).{8,16}$/;
 
     if (form.id.value == "") {
         alert("이름을 입력해주세요")
